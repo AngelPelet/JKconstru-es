@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/home.css">
+    <link rel="stylesheet" href="estilos/empreendimentos.css">
+    <link rel="shortcut icon" href="imagens/jk-icone.ico" type="image/x-icon">
+    <script src="script.js" defer></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <title>JK Construções</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="imagens/jk-construções-logo.jpeg" alt="" class="logo">
+        </div>
+        <div>
+            <div class="navbar">
+                <a href="#home">Home</a>
+                <div class="dropdown" > 
+                    <button class="dropbtn" onclick="myFunction()">Empreendimentos ▾
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content" id="myDropdown">
+                        <a href="#vila_dos_ipes">Vila dos Ipes</a>
+                        <a href="#recanto">Recanto Doce Vida</a>
+                        <a href="#">Terras</a>
+                        <a href="#">Monte Santo</a>
+                    </div>
+                </div>
+                <a href="#contato">Contato</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="caixa_apresentacao">
+                <div class="descricao">
+                    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum itaque tempora praesentium animi voluptate in quidem voluptates, laudantium debitis dolore suscipit, porro ea, nobis perferendis quia ex consequatur laborum ab! Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora nobis accusantium non? Quam deleniti necessitatibus minus veniam possimus eaque omnis doloremque nam voluptates. Dolores quos voluptatibus, atque illum ex odit?</h1>
+                    <div class="botao">
+                        <a href="#empreendimentos">Conheça <box-icon name='down-arrow-alt' animation='fade-down' color='#fff9f9' ></box-icon></box-icon></a>
+                    </div>
+                </div>
+                <div id="slide" >
+                    <img class="mySlides" src="imagens/img1.jpg" style="width:100%">
+                    <img class="mySlides" src="imagens/img2.jpg" style="width:100%">
+                    <img class="mySlides" src="imagens/img3.jpg" style="width:100%">
+                  </div>
+            </div>
+        </section>
+
+        <section id="empreendimentos">
+            <section id="vila_dos_ipes">
+                <h1 class="titulo_emp">Vila dos Ipês</h1>
+                <div class="sobre">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt a magni unde ducimus ipsa libero amet natus explicabo! Deleniti debitis dicta nam ex reprehenderit dolore non quidem nostrum magnam veniam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo est ullam blanditiis assumenda labore neque autem eum nesciunt quibusdam minus, in suscipit ea iusto provident commodi, reiciendis, repellat soluta minima?</p>
+                    <img src="imagens/vila-dos-ipes-logo.jpeg" alt="Logo vila dos ipês">
+                </div>
+
+                <div class="paralax">
+
+                </div>
+
+                <div class="body">
+                    <div class="accordion">
+                        <div class="contentBx">
+                            <div class="label">Saiba mais</div>
+                            <div class="content">
+                                <div class="quero">
+                                    <div>
+                                        <div class="slideshow-container">
+                                            <div class="fotos fade1">
+                                              <div class="numbertext1">1 / 3</div>
+                                              <img src="imagens/img1.jpg" style="width:100%">
+                                            </div>
+                                            
+                                            <div class="fotos fade1">
+                                              <div class="numbertext1">2 / 3</div>
+                                              <img src="imagens/img2.jpg" style="width:100%">
+                                            </div>
+                                            
+                                            <div class="fotos fade1">
+                                              <div class="numbertext1">3 / 3</div>
+                                              <img src="imagens/img3.jpg" style="width:100%">
+                                            </div>
+                                            
+                                            <a class="prev1" onclick="plusSlides1(-1)">❮</a>
+                                            <a class="next1" onclick="plusSlides1(1)">❯</a>
+                                            
+                                            </div>
+                                            <br>
+                                            
+                                            <div style="text-align:center">
+                                              <span class="dot1" onclick="currentSlide1(1)"></span> 
+                                              <span class="dot1" onclick="currentSlide1(2)"></span> 
+                                              <span class="dot1" onclick="currentSlide1(3)"></span> 
+                                            </div>
+                                    </div>
+                                    <div class="bnt_contato">
+                                        <a href=""><box-icon name='whatsapp' class="zap" type='logo' animation='tada' color='#04a216' ></box-icon></a>
+                                        <a href="">+55 (75)9xxxx-xxxx</a>
+                                    </div>
+                                </div>
+                                <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15556.086727307751!2d-38.34818285!3d-12.9063273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1699076464031!5m2!1spt-BR!2sbr" width="530" height="480" style="border:1px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="recanto">
+                <h1 class="titulo_emp">Recanto Doce Vida</h1>
+                <div class="sobre">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt a magni unde ducimus ipsa libero amet natus explicabo! Deleniti debitis dicta nam ex reprehenderit dolore non quidem nostrum magnam veniam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo est ullam blanditiis assumenda labore neque autem eum nesciunt quibusdam minus, in suscipit ea iusto provident commodi, reiciendis, repellat soluta minima?</p>
+                    <img src="imagens/vila-dos-ipes-logo.jpeg" alt="Logo vila dos ipês">
+                </div>
+
+                <div class="paralax">
+
+                </div>
+
+                <div class="body">
+                    <div class="accordion">
+                        <div class="contentBx">
+                            <div class="label">Saiba mais</div>
+                            <div class="content">
+                                <div class="quero">
+                                    <div>
+
+                                    </div>
+                                    <div class="bnt_contato">
+                                        <a href=""><box-icon name='whatsapp' class="zap" type='logo' animation='tada' color='#04a216' ></box-icon></a>
+                                        <a href="">+55 (75)9xxxx-xxxx</a>
+                                    </div>
+                                </div>
+                                <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15556.086727307751!2d-38.34818285!3d-12.9063273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1699076464031!5m2!1spt-BR!2sbr" width="530" height="480" style="border:1px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+        </section>
+
+        <section id="contato">
+
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>

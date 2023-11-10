@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/home.css">
     <link rel="stylesheet" href="estilos/empreendimentos.css">
+    <link rel="stylesheet" href="estilos/footer.css">
     <link rel="shortcut icon" href="imagens/jk-icone.ico" type="image/x-icon">
     <script src="script.js" defer></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
@@ -15,7 +16,7 @@
 <body>
     <header>
         <div>
-            <img src="imagens/jk-construções-logo.jpeg" alt="" class="logo">
+            <img src="imagens/jk-construcoes-logo.jpeg" alt="" class="logo">
         </div>
         <div>
             <div class="navbar">
@@ -27,8 +28,8 @@
                     <div class="dropdown-content" id="myDropdown">
                         <a href="#vila_dos_ipes">Vila dos Ipes</a>
                         <a href="#recanto">Recanto Doce Vida</a>
-                        <a href="#">Terras</a>
-                        <a href="#">Monte Santo</a>
+                        <a href="#terras_serrinha">Terras Serrinha</a>
+                        <a href="#monte_santo">Monte Santo</a>
                     </div>
                 </div>
                 <a href="#contato">Contato</a>
@@ -112,47 +113,65 @@
                 </div>
             </section>
             
-            <section id="recanto">
-                <h1 class="titulo_emp">Recanto Doce Vida</h1>
-                <div class="sobre">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt a magni unde ducimus ipsa libero amet natus explicabo! Deleniti debitis dicta nam ex reprehenderit dolore non quidem nostrum magnam veniam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo est ullam blanditiis assumenda labore neque autem eum nesciunt quibusdam minus, in suscipit ea iusto provident commodi, reiciendis, repellat soluta minima?</p>
-                    <img src="imagens/vila-dos-ipes-logo.jpeg" alt="Logo vila dos ipês">
-                </div>
-
-                <div class="paralax">
-
-                </div>
-
-                <div class="body">
-                    <div class="accordion">
-                        <div class="contentBx">
-                            <div class="label">Saiba mais</div>
-                            <div class="content">
-                                <div class="quero">
-                                    <div>
-
-                                    </div>
-                                    <div class="bnt_contato">
-                                        <a href=""><box-icon name='whatsapp' class="zap" type='logo' animation='tada' color='#04a216' ></box-icon></a>
-                                        <a href="">+55 (75)9xxxx-xxxx</a>
-                                    </div>
-                                </div>
-                                <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15556.086727307751!2d-38.34818285!3d-12.9063273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1699076464031!5m2!1spt-BR!2sbr" width="530" height="480" style="border:1px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            
         </section>
 
-        <section id="contato">
-
-        </section>
     </main>
 
-    <footer>
+    <footer id="contato">
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <h1>Redes</h1>
+                <p>Um pouco mais do nosso trabalho</p>
+                <div id="footer_social_media">
+                    <a href="#" class="footer_link" id="instagram">
+                        <box-icon type='logo' name='instagram' color="#ffffff"></box-icon>
+                    </a>
 
+                    <a href="#" class="footer_link" id="facebook">
+                        <box-icon type='logo' name='facebook' color="#ffffff"></box-icon>
+                    </a>
+                    
+                    <a href="#" class="footer_link" id="whats">
+                        <box-icon type='logo' name='whatsapp' color="#ffffff"></box-icon>
+                    </a>
+                </div>
+            </div>
+
+            <ul class="footer_list">
+                <li>
+                    <h1>Outros Sites</h1>
+                </li>
+                <li>
+                    <a href="#" class="footer_link">LopesEnterprise</a>
+                </li>
+                <li>
+                    <a href="#" class="footer_link">PitStop</a>
+                </li>
+                <li>
+                    <a href="#" class="footer_link">Outro</a>
+                </li>
+                <li>
+                    <a href="#" class="footer_link">Outro</a>
+                </li>
+            </ul>
+                <form action="https://api.staticforms.xyz/submit" id="suporte" method="post">
+                    <h1>Suporte</h1>
+                    <label>Nome</label>
+                    <input type="text" name="name" id="nome" placeholder="Digite seu nome" required>
+                    <label>E-mail</label>
+                    <input type="text" name="email" placeholder="Digite seu e-mail" id="email" required>
+                    <label>Mensagem</label>
+                    <textarea name="message" id="caixa_de_texto" cols="30" rows="5" placeholder="Digite sua mensagem" required></textarea>
+                    <button id="enviar" type="submit">Enviar</button>
+
+                    <input type="hidden" name="accessKey" value="a86f8f26-9df0-4b39-9a29-297ee2473fa6">
+                    <input type="hidden" name="redirectTo" value="http://127.0.0.1:5501/index.html#contato"> 
+                </form>
+        </div>
+        <div id="footer_copy">
+            &#169
+            2023 all rights reserved
+        </div>
     </footer>
 </body>
 </html>

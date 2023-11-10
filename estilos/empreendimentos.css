@@ -84,11 +84,13 @@
     overflow: hidden;
     transition: 0.5s;
     overflow-y: auto;
+    overflow: hidden;
 }
 
 .accordion .contentBx.ativo .content{
     height: 500px;
     padding: 10px;
+    overflow: hidden;
 }
 
 .quero{

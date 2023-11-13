@@ -72,3 +72,13 @@ function showSlides1(n) {
   slidess[si-1].style.display = "block";  
   dotss[si-1].className += " active";
 }
+
+
+
+//--------------------------------------------------------------------
+
+let iniciar = document.getElementById("enviar")
+
+iniciar.addEventListener("click", function(event) {
+  alert('Mensagem enviada com sucesso!')
+}, true );

@@ -1,0 +1,90 @@
+@media screen and (max-width: 790px){
+    #home{
+        min-height: 300px;
+    }
+
+    .descricao{
+        gap: 30px;
+    }
+
+    .descricao>h1{
+        font-size: 14px;
+    }
+
+    .sobre{
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+
+    .paralax{
+        height: 370px;
+        background-image: url(parallax.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .mapa{
+        height: 330px;
+        margin: auto;
+    }
+
+    .accordion .contentBx.ativo .content{
+        height: 350px;
+        padding: 10px;
+        overflow: hidden;
+    }
+
+}
+
+
+@media screen and (max-width: 426px){
+    .navbar{
+        padding-right: 0px;
+        gap: 30px;
+    }
+
+    .descricao>h1{
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+    #slide{
+        display: none;
+    }
+
+    .logo_emp{
+        display: none;
+    }
+
+    .paralax{
+        align-items: center;          
+        height: 370px;
+        background-image: url(parallax.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .accordion{
+        width: 520px;
+    }
+    
+    .content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mapa{
+        height: 400px;
+        width: 520px;
+        margin: auto;
+    }
+
+    .accordion .contentBx.ativo .content{
+        height: 650px;
+        padding: 10px;
+        overflow: hidden;
+    }
+
+}

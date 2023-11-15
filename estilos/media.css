@@ -39,35 +39,78 @@
 
 
 @media screen and (max-width: 426px){
+    *{
+        overflow-x: hidden;
+    }
+
+    #empreendimentos{
+        margin: 10px;
+    }
+
     .navbar{
         padding-right: 0px;
-        gap: 30px;
+        gap: 0px;
+    }
+
+    .navbar>a{
+        font-size: 13px;
+    }
+
+    .dropbtn>p{
+        font-size: 13px;
+        font-weight: 600;
+    }
+
+    .logo{
+        width: 120px;
+        height: 66px;
+    }
+
+    .botao{
+        display: none;
     }
 
     .descricao>h1{
-        font-size: 18px;
+        font-size: 14px;
         margin-top: 10px;
     }
 
-    #slide{
-        display: none;
+    .caixa_apresentacao{
+        display: flex;
+        flex-direction: column;
     }
 
     .logo_emp{
         display: none;
     }
 
+    .sobre>p{
+        font-size: 14px;
+        margin: 20px;
+    }
+
+    .titulo_emp{
+        font-size: 28px;
+    }
+
+    #vila_dos_ipes{
+        margin-left: -50px;
+        margin-right: -50px;
+    }
+
     .paralax{
         align-items: center;          
-        height: 370px;
-        background-image: url(parallax.jpg);
+        height: 250px;
+        background-image: url(vila-dos-ipes-logo.jpeg);
         background-attachment: fixed;
-        background-size: cover;
+        background-size: contain;
         background-position: center;
+        background-repeat: no-repeat;
+        box-shadow: none;
     }
 
     .accordion{
-        width: 520px;
+        width: 450px;
     }
     
     .content{
@@ -76,15 +119,31 @@
     }
 
     .mapa{
-        height: 400px;
-        width: 520px;
+        height: 300px;
+        width: 380px;
         margin: auto;
     }
 
     .accordion .contentBx.ativo .content{
-        height: 650px;
+        height: 700px;
         padding: 10px;
         overflow: hidden;
     }
 
+    .fotos>img{
+        padding: 5px;
+    }
+
+    .zap{
+        overflow: hidden;
+    }
+
+    #whats>box-icon{
+        overflow: hidden;
+    }
+
+    .dropdown-content a,
+    .dropdown-content p{
+        font-size: 14px;
+    }
 }

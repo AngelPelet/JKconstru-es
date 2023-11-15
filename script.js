@@ -76,9 +76,3 @@ function showSlides1(n) {
 
 
 //--------------------------------------------------------------------
-
-let iniciar = document.getElementById("enviar")
-
-iniciar.addEventListener("click", function(event) {
-  alert('Mensagem enviada com sucesso!')
-}, true );

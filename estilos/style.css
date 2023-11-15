@@ -79,13 +79,15 @@ header{
     z-index: 1;
 }
 
-.dropdown-content a{
+.dropdown-content a,
+.dropdown-content p{
     float: none;
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     text-align: left;
+    font-size: 16px;
 }
 
 .dropdown:hover .dropdown-content{
@@ -94,14 +96,20 @@ header{
 
 .dropdown-content a:hover {
     background-color: #ddd;
-  }
+}
 
 .show{
     display: block;
 }
+
+.dropbtn>p{
+    font-weight: 600;
+}
   
 
-.mySlides {display: none}
+.mySlides {
+    display: none;
+}
  
 
 

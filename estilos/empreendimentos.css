@@ -4,22 +4,62 @@
 
 .titulo_emp{
     display: flex;
+    align-items: center;
     justify-content: center;
     margin: 50px;
     font-size: 36px;
 }
 
-.sobre{
+.marca{
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-evenly;
+    position: static;
+    margin-right: 100px;
+    margin-bottom: 50px;
+    margin-top: 160px;
+}
+
+.logo_emp{
+    height: 200px;
+}
+
+.sobre{
+    align-items: center;
     margin-right: 200px;
     margin-left: 200px;
     gap: 100px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.219);
+    padding: 5px;
 }
 
 .sobre>p{
     text-align: justify;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 40px;
+}
+
+.sobre>ul>li:before {
+    content: '•';
+    display: inline-block;
+    position: relative;
+    left: -10px;
+    color: rgb(0, 0, 0);
+    font-size: 35px;
+    transform: translateY(4px);
+    text-shadow: -1px 2px 4px ;
+}
+  
+
+.sobre>ul>li{
+    text-indent: 5px;
+    margin: 15px;
+    font-size: 20px;
+    text-align: justify;
+    list-style: none;
 }
 
 .sobre>img{
@@ -33,6 +73,29 @@
     height: 450px;
     background-image: url(parallax.jpg);
     background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    margin-top: 50px;
+}
+
+.paralax2{
+    box-shadow: inset 6px 6px 10px;
+    width: 100%;
+    height: 450px;
+    background-image: url(paralax-recanto.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    margin-top: 50px;
+}
+
+.paralax3{
+    box-shadow: inset 6px 6px 10px;
+    width: 100%;
+    height: 450px;
+    background-image: url(terras1.jpg);
+    background-attachment: fixed;
+    background-position: center;
     background-size: cover;
     margin-top: 50px;
 }
@@ -44,22 +107,39 @@
     min-height: 20vh;
 }
 
-.content{
+.caixa_precos{
     display: flex;
+}
+
+.content,
+.content1,
+.content2{
+    display: flex;
+    flex-direction: column;
     align-items: baseline;
     gap: 20px;  
 }
 
-.accordion{
+.mapa{
+    margin-top: 1000px;
+}
+
+.accordion,
+.accordion1,
+.accordion2{
     max-width: 1000px;
 }
 
-.accordion .contentBx{
+.accordion .contentBx,
+.accordion1 .contentBx1,
+.accordion2 .contentBx2{
     position: relative;
     margin: 10px 20px;
 }
 
-.accordion .contentBx .label{
+.accordion .contentBx .label,
+.accordion1 .contentBx1 .label1,
+.accordion2 .contentBx2 .label2{
     position: relative;
     padding: 10px;
     background-color: green;
@@ -67,7 +147,9 @@
     cursor: pointer;
 }
 
-.accordion .contentBx .label::before{
+.accordion .contentBx .label::before,
+.accordion1 .contentBx1 .label1::before,
+.accordion2 .contentBx2 .label2::before{
     content: '+';
     position: absolute;
     top: 50%;
@@ -77,7 +159,9 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.accordion .contentBx .content{
+.accordion .contentBx .content,
+.accordion1 .contentBx1 .content1,
+.accordion2 .contentBx2 .content2{
     position: relative;
     background-color: rgba(102, 102, 102, 0.322);
     height: 0;
@@ -87,13 +171,17 @@
     overflow: hidden;
 }
 
-.accordion .contentBx.ativo .content{
-    height: 500px;
+.accordion .contentBx.ativo .content,
+.accordion1 .contentBx1.ativo1 .content1,
+.accordion2 .contentBx2.ativo2 .content2{
+    height: 750px;
     padding: 10px;
     overflow: hidden;
 }
 
-.quero{
+.quero,
+.quero1,
+.quero2{
    display: flex;
    flex-direction: column; 
 }
@@ -117,21 +205,29 @@
 
 
 
-.fotos{
+.fotos,
+.fotos1,
+.fotos2{
     display: none;
 }
 
-.fotos>img{
+.fotos>img,
+.fotos1>img,
+.fotos2>img{
     vertical-align: middle;
 }
 
-.slideshow-container{
+.slideshow-container,
+.slideshow-container1,
+.slideshow-container2{
     max-width: 1000px;
     position: relative;
     margin: auto;
 }
   
-.prev1, .next1 {
+.prev1, .next1, 
+.prev2, .next2,
+.prev3, .next3{
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -147,12 +243,16 @@
     text-decoration: none;
 }
   
-.next1 {
+.next1,
+.next2,
+.next3{
     right: 0;
     border-radius: 3px 0 0 3px;
 }
   
-.prev1:hover, .next1:hover {
+.prev1:hover, .next1:hover,
+.prev2:hover, .next2:hover,
+.prev3:hover, .next3:hover{
     background-color: rgba(0,0,0,0.8);
 }
   
@@ -164,7 +264,7 @@
     top: 0;
 }
   
-.dot1 {
+.dot1, .dot2, .dot3{
     cursor: pointer;
     height: 15px;
     width: 15px;
@@ -175,11 +275,14 @@
     transition: background-color 0.6s ease;
 }
   
-.active, .dot1:hover {
+.active, .active1, .active2,
+.dot1:hover ,.dot2:hover, .dot3:hover{
     background-color: #717171;
 }
   
-.fade1 {
+.fade1,
+.fade2,
+.fade3 {
     animation-name: fade;
     animation-duration: 1.5s;
 }
@@ -189,10 +292,31 @@
     to {opacity: 1}
 }
 
-@media only screen and (max-width: 300px) {
-    .prev, .next,.text {font-size: 11px}
-} 
-
 .mapa{
     margin: auto;
+}
+
+.chama{
+    width: 250px;
+    
+}
+
+.direita{
+    width: 300px;
+    padding: 15px;
+    overflow: hidden;
+}
+
+.sobre>ul>li>strong{
+    color: rgb(194, 23, 23);
+}
+
+.fotos>img,
+.fotos1>img,
+.fotos2>img{
+    width: 100%;
+}
+
+.bola, .bola2, .bola3{
+    transform: translateX(45%);
 }

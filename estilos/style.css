@@ -11,6 +11,9 @@
 
 html{
     scroll-behavior: smooth;
+    background-image: url(back.jpg);
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 header{
@@ -25,8 +28,8 @@ header{
 }
 
 .logo{
-    width: 150px;
-    height: 82px;
+    width: 130px;
+    height: 63px;
 }
 
 .navbar{

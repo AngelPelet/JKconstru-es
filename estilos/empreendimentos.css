@@ -2,6 +2,12 @@
     margin: 80px;
 }
 
+#vila_dos_ipes,
+#recanto,
+#terras_serrinha{
+    padding-top: 30px;
+}
+
 .titulo_emp{
     display: flex;
     align-items: center;
@@ -117,7 +123,7 @@
     display: flex;
     flex-direction: column;
     align-items: baseline;
-    gap: 20px;  
+    gap: 20px; 
 }
 
 .mapa{
@@ -174,9 +180,15 @@
 .accordion .contentBx.ativo .content,
 .accordion1 .contentBx1.ativo1 .content1,
 .accordion2 .contentBx2.ativo2 .content2{
-    height: 750px;
+    height: 908px;
     padding: 10px;
     overflow: hidden;
+}
+
+.baixo{
+    display: flex;
+    justify-content: space-evenly;
+    width: 960px;
 }
 
 .quero,
@@ -248,6 +260,13 @@
 .next3{
     right: 0;
     border-radius: 3px 0 0 3px;
+    transform: translateX(-47px);
+}
+
+.prev1,
+.prev2,
+.prev3{
+    transform: translateX(47px);
 }
   
 .prev1:hover, .next1:hover,
@@ -258,10 +277,12 @@
   
 .numbertext1 {
     color: #f2f2f2;
-    font-size: 12px;
+    font-size: 16px;
     padding: 8px 12px;
     position: absolute;
     top: 0;
+    z-index: 1;
+    transform: translateX(50px) translateY(20px);
 }
   
 .dot1, .dot2, .dot3{
@@ -296,15 +317,18 @@
     margin: auto;
 }
 
-.chama{
-    width: 250px;
-    
+.chama>img{
+    width: 300px;
+    height: 191px;
 }
 
 .direita{
-    width: 300px;
+    width: 330px;
     padding: 15px;
-    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
 }
 
 .sobre>ul>li>strong{
@@ -314,9 +338,15 @@
 .fotos>img,
 .fotos1>img,
 .fotos2>img{
-    width: 100%;
+    transform: translateX(5.6%);
+    width: 90%;
+    margin-top: 20px;
 }
 
-.bola, .bola2, .bola3{
-    transform: translateX(45%);
+.bola, .bola3{
+    transform: translateX(42%);
+}
+
+.bola2{
+    transform:translateX(35%)
 }

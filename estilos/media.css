@@ -117,19 +117,37 @@
 
     .mapa{
         height: 250px;
-        width: 700px;
+        width: 300px;
+    }
+
+    .baixo{
+        justify-content: center;
+        gap: 30px;
+        transform: translateX(-115px);
     }
 
     .accordion .contentBx.ativo .content,
     .accordion1 .contentBx1.ativo1 .content1,
-    .accordion2 .contentBx.ativo2 .content2{
-        height: 725px;
+    .accordion2 .contentBx2.ativo2 .content2{
+        height: 770px;
         padding: 10px;
         overflow: hidden;
     }
 
+    .marca_recanto>h1{
+        font-size: 30px;
+    }
+
+    .marca_recanto{
+        transform: translateX(70px);
+    }
+
+    .logo_terras{
+        transform: translateX(40px);
+    }
+
     .direita{
-        width: 400px;
+        width: 330px;
     }
 
     .zap{
@@ -206,6 +224,14 @@
         margin-top: 20px;
     }
 
+    .marca_recanto{
+        transform: translateX(-3px);
+    }
+
+    .logo_terras{
+        transform: translateX(-10px);
+    }
+
     .sobre{
         margin: 70px;
     }
@@ -273,19 +299,22 @@
     }
 
     .mapa{
-        height: 370px;
-        width: 330px;
+        height: 150px;
+        width: 328px;
         margin: auto;
     }
 
-    .bnt_contato{
-        transform: translateX(-40px);
+    .baixo{
+        flex-direction: column;
+        width: 330px;
+        transform: translateX(1px);
     }
 
     .fotos>img,
     .fotos1>img,
     .fotos2>img{
-        width: 82.5%;
+        width: 100%;
+        transform: translateX(-1px);
     }
 
     .accordion,
@@ -297,19 +326,33 @@
     .accordion .contentBx.ativo .content,
     .accordion1 .contentBx1.ativo1 .content1,
     .accordion2 .contentBx2.ativo2 .content2{
-        height: 1060px;
+        height: 780px;
         padding: 10px;
         overflow: hidden;
     }
 
-    .bola, .bola2, .bola3{
-        transform: translateX(133px);
+    .bola, .bola3{
+        transform: translateX(80px);
+    }
+
+    .bola2{
+        transform: translateX(30px);
     }
 
     .next1,
     .next2,
     .next3{
-        transform: translateX(-70px);
+        transform: translateX(1px);
+    }
+
+    .prev1,
+    .prev2,
+    .prev3{
+        transform: translateX(-1px);
+    }
+
+    .numbertext1{
+        transform: translateX(-1px) translateY(20px);
     }
 
     .zap{
@@ -337,7 +380,7 @@
     .sobre>ul>li:before {
         font-size: 26px;
         transform: translateY(2.8px);
-        text-shadow: -1px 2px 4px ;
+        text-shadow: 0.5px 2px 4px ;
     }
 }
 

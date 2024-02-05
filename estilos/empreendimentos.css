@@ -343,10 +343,6 @@
     margin-top: 20px;
 }
 
-.bola, .bola3{
-    transform: translateX(42%);
-}
-
-.bola2{
-    transform:translateX(35%)
+.bola, .bola2, .bola3{
+    transform: translateX(35%);
 }

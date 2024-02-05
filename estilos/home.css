@@ -18,6 +18,7 @@
 }
 
 .descricao>h1{
+    font-weight: 400;   
     color: white;
     font-size: 18px;
     font-weight: 200;
